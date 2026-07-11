@@ -1,0 +1,430 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://ssa.gov/osss/schemas/2.0" targetNamespace="http://ssa.gov/osss/schemas/2.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+    <!--  ******************************************************************  -->
+    <!-- 						Root Element								 -->
+    <!--  ******************************************************************  -->
+    <xsd:element name="OnlineSocialSecurityStatementData" type="OnlineSocialSecurityStatementDataType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Online Social Security Statement Data </xsd:DictionaryEntryName>
+                <xsd:Definition> Structure containing the user's Online Social Security Statement data. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <!--  ******************************************************************  -->
+    <!-- 						Element Declarations						 -->
+    <!--  ******************************************************************  -->
+    <xsd:element name="DateOfBirth" type="xsd:date">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Birth Date </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's birth date. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="DelayedRetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Delayed Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated delayed retirement benefit to be received if they retire at the delayed retirement age. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age62RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 62 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 62. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age63RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 63 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 63. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age64RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 64 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 64. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age65RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 65 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 65. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age66RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 66 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 66. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age67RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 67 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 67. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age68RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 68 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 68. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age69RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 69 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 69. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Age70RetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age 70 Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated retirement benefit to be received if they retire at age 70. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="DisabilityEstimate" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Disability Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated disability benefit if they become disabled. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="EarlyRetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Early Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated reduced retirement benefit to be received if they retire at the early retirement age. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Earnings" type="EarningsYearType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Earnings </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's taxed earnings for the specified start year and and year period. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="EarningsRecord" type="EarningsRecordType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Earnings Record </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's Earnings, FICA, and Medicare taxes paid. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Estimate" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's Retirement Estimate. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="EstimatedBenefits" type="EstimatedBenefitsType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Estimated Benefits </xsd:DictionaryEntryName>
+                <xsd:Definition> Containing the user's Benefit Estimates. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="FicaEarnings" type="xsd:integer">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Federal Insurance Contributions Act (FICA) Earnings </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the amount of Social Security taxed earnings in the specified work year period. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="FicaTaxTotalEmployer" type="xsd:integer">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Federal Insurance Contributions Act (FICA) Tax Total Employer </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the estimated total Social Security taxes paid by the user's employer. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="FicaTaxTotalIndividual" type="xsd:integer">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Federal Insurance Contributions Act (FICA) Tax Total Individual </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the estimated total Social Security taxes paid by the user. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="FileCreationDate" type="xsd:dateTime">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> File Creation Date </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the Date and time the Social Security Statement XML data export file was created. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="FullRetirementEstimate" type="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Full Retirement Estimate </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated full retirement benefit to be received if they retire at the full retirement age. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="MedicareEarnings" type="xsd:integer">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Medicare Earnings </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the amount of Medicare taxed earnings in the specified work year period. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="MedicareTaxTotalEmployer" type="xsd:integer">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Medicare Tax Total Employer </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the estimated total Medicare taxes paid by the user's employer. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="MedicareTaxTotalIndividual" type="xsd:integer">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Medicare Tax Total Individual </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the estimated total Medicare taxes paid by the user. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Months" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Months </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the months portion of the user's retirement age. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Name" type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Name </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's full name. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="OneTimeDeathBenefit" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> One Time Death Benefit </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's lump sum Death Benefit payment amount. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="RetirementAge" type="AgeType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Estimate Retirement Age </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's retirement age for a specified Retirement Estimate. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="SurvivorsEstimateChild" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Survivors Estimate Child </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated survivors benefit amount that their child may be eligible for. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="SurvivorsEstimateFamily" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Survivors Estimate Family </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's estimated maximum amount of survivors benefits that user's family may be eligible for. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="SurvivorsEstimateRetired" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Survivors Estimate Retired </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's Estimated survivors benefit amount that the user's spouse may receive starting at full retirement age. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="SurvivorsEstimateSpouseChild" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Survivors Estimate Spouse Child </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's Estimated survivors benefit amount that the user's spouse who is caring for their child may be eligible for. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="UserInformation" type="UserInformationType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> User Information </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the user's biographical information. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Years" type="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Years </xsd:DictionaryEntryName>
+                <xsd:Definition> The years portion of the user's retirement age. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <!--  ******************************************************************  -->
+    <!-- 						Type Definitions							 -->
+    <!--  ******************************************************************  -->
+    <!--  ******************************************************************  -->
+    <!-- 						Complex Type Definitions					 -->
+    <!--  ******************************************************************  -->
+    <xsd:complexType name="AgeType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Age Type </xsd:DictionaryEntryName>
+                <xsd:Definition> Represents an age as a combination of Years and Months. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="Years" />
+            <xsd:element ref="Months" minOccurs="0" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="EarningsRecordType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Earnings Record Type </xsd:DictionaryEntryName>
+                <xsd:Definition> Represents a user's Earnings, FICA and Medicare taxes paid. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="Earnings" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element ref="FicaTaxTotalEmployer" />
+            <xsd:element ref="FicaTaxTotalIndividual" />
+            <xsd:element ref="MedicareTaxTotalEmployer" />
+            <xsd:element ref="MedicareTaxTotalIndividual" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="EarningsYearType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Earnings Year Type </xsd:DictionaryEntryName>
+                <xsd:Definition> Contains the amount of Social Security and Medicare taxed earnings in the specified work year period. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="FicaEarnings" />
+            <xsd:element ref="MedicareEarnings" />
+        </xsd:sequence>
+        <xsd:attribute name="startYear" type="xsd:integer" use="required" />
+        <xsd:attribute name="endYear" type="xsd:integer" use="required" />
+    </xsd:complexType>
+    <xsd:complexType name="EstimatedBenefitsType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Estimated Benefits Type </xsd:DictionaryEntryName>
+                <xsd:Definition> Represents a user's Benefit Estimates. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="EarlyRetirementEstimate" />
+            <xsd:element ref="FullRetirementEstimate" />
+            <xsd:element ref="DelayedRetirementEstimate" />
+            <xsd:element ref="Age62RetirementEstimate" />
+            <xsd:element ref="Age63RetirementEstimate" />
+            <xsd:element ref="Age64RetirementEstimate" />
+            <xsd:element ref="Age65RetirementEstimate" />
+            <xsd:element ref="Age66RetirementEstimate" />
+            <xsd:element ref="Age67RetirementEstimate" />
+            <xsd:element ref="Age68RetirementEstimate" />
+            <xsd:element ref="Age69RetirementEstimate" />
+            <xsd:element ref="Age70RetirementEstimate" />
+            <xsd:element ref="DisabilityEstimate" />
+            <xsd:element ref="OneTimeDeathBenefit" />
+            <xsd:element ref="SurvivorsEstimateChild" />
+            <xsd:element ref="SurvivorsEstimateFamily" />
+            <xsd:element ref="SurvivorsEstimateRetired" />
+            <xsd:element ref="SurvivorsEstimateSpouseChild" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="OnlineSocialSecurityStatementDataType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Online Social Security Statement Data Type </xsd:DictionaryEntryName>
+                <xsd:Definition> Represents a user's Online Social Security Statement data. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="FileCreationDate" />
+            <xsd:element ref="UserInformation" />
+            <xsd:element ref="EstimatedBenefits" />
+            <xsd:element ref="EarningsRecord" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="RetirementEstimateType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Retirement Estimate Type </xsd:DictionaryEntryName>
+                <xsd:Definition> Represents a user's Retirement Estimate data (either Early, Full, or Delayed). </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="RetirementAge" />
+            <xsd:element ref="Estimate" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="UserInformationType">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> User Information Type </xsd:DictionaryEntryName>
+                <xsd:Definition> Represents a user's biographical information. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="Name" />
+            <xsd:element ref="DateOfBirth" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--  ******************************************************************  -->
+    <!-- 						Simple Type Definitions						 -->
+    <!--  ******************************************************************  -->
+    <xsd:simpleType name="EmptyInteger">
+        <xsd:annotation>
+            <xsd:documentation>
+                <xsd:DictionaryEntryName> Empty Integer </xsd:DictionaryEntryName>
+                <xsd:Definition> A standard Integer value that can also be blank if no value exists. </xsd:Definition>
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:union>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:length value="0" />
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:integer" />
+            </xsd:simpleType>
+        </xsd:union>
+    </xsd:simpleType>
+</xsd:schema>
